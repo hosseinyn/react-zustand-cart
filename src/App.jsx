@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     setPrice(Number(localStorage.getItem("prices")))
     setCount(Number(localStorage.getItem("products_count")))
-    setProducts(JSON.parse(localStorage.getItem("products")) || '[]')
+    setProducts(JSON.parse(localStorage.getItem("products")) || [])
   } , [])
 
   return (

@@ -33,7 +33,6 @@ const useStoreProducts = create((set) => ({
       return { products: newProducts };
     }),
   setProducts: (value) => {
-    localStorage.setItem("products", JSON.stringify(value));
     set({ products: value });
   },
   removeProduct: (name) =>
