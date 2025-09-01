@@ -7,6 +7,7 @@ import { useStorePrice , useStoreProductsCount , useStoreProducts } from "./stor
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )

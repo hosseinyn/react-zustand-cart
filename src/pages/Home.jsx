@@ -31,6 +31,8 @@ const Home = () => {
           <img alt="My Skills" src="https://skillicons.dev/icons?i=html,css,js,bootstrap,react" />
 
         </section>
+
+        <br />
     </>
   )
 }
