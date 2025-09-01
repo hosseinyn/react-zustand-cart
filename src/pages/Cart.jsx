@@ -29,7 +29,7 @@ const Cart = () => {
                 index === self.findIndex((p) => p.name === value.name)
                 )
                 .map((value, index) => (
-                <div key={index} className="col-4">
+                <div key={index} className="col-10 col-sm-6 col-md-4 cart-product">
                     <CartProduct
                     name={value.name}
                     price={value.price}
