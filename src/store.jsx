@@ -37,7 +37,22 @@ const useStoreProducts = create((set) => ({
   },
   removeProduct: (name) =>
     set((state) => {
-      const newProducts = state.products.filter((product) => product.name !== name);
+      const newProducts = state.products.filter(
+        (product) => product.name !== name
+      );
+      localStorage.setItem("products", JSON.stringify(newProducts));
+      return { products: newProducts };
+    }),
+  removeOneProduct: (name) =>
+    set((state) => {
+      let removed = false;
+      const newProducts = state.products.filter((p) => {
+        if (!removed && p.name === name) {
+          removed = true;
+          return false;
+        }
+        return true;
+      });
       localStorage.setItem("products", JSON.stringify(newProducts));
       return { products: newProducts };
     }),

@@ -9,7 +9,7 @@ import woman_black_shoe from "/assets/images/woman-black-shoe.jpg";
 const Home = () => {
   return (
     <>
-        <div className="d-flex flex-row gap-3 ms-5 align-items-center mt-5">
+        <div className="d-flex flex-row gap-3 ms-5 align-items-center mt-5 flex-wrap flex-sm-nowrap justify-content-center">
             <Product name="Blue shoe" price={1500} description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolor, amet eligendi ipsa porro error cupiditate officiis repudiandae quis, aliquid debitis explicabo!" image={shoe1} />
 
             <Product name="Women shoe" price={1300} description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi dolor, amet eligendi ipsa porro error cupiditate officiis repudiandae quis, aliquid debitis explicabo!" image={women_shoe} />
