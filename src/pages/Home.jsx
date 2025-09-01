@@ -20,6 +20,17 @@ const Home = () => {
         </div>
 
         <br />
+
+        <section className="d-flex flex-column gap-3 align-items-center justify-content center mt-4" id="about">
+          <h3>About the project</h3>
+
+          <p className="text-center w-75">
+            This project is a simple shopping cart built with HTML, CSS, JS, the UI framework Bootstrap, and the JS framework React. In this project, the modern, fast, and easy-to-use JS state management library Zustand is used to manage global states. Additionally, all this information is stored in local storage and then loaded from local storage into the global states. This project is completely demonstrative and static, and it does not include any API.
+          </p>
+
+          <img alt="My Skills" src="https://skillicons.dev/icons?i=html,css,js,bootstrap,react" />
+
+        </section>
     </>
   )
 }
