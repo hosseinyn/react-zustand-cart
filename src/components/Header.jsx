@@ -44,7 +44,7 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <SectionLink className="nav-link" to="about">
+                <SectionLink className="nav-link" to="about" style={{cursor: "pointer"}}>
                   About the project
                 </SectionLink>
               </li>
